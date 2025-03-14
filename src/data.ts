@@ -6,6 +6,9 @@ export async function getRecentOrders() {
   return (await getOrders()).slice(0, 10)
 }
 
+export async function getRecentEvents(){
+  return (await getEvents()).slice(0,1)
+}
 
 
 

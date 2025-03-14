@@ -17,13 +17,13 @@ export const metadata: Metadata = {
 export default function Settings() {
   return (
     <form method="post" className="mx-auto max-w-4xl">
-      <Heading>Settings</Heading>
+      <Heading>设置</Heading>
       <Divider className="my-10 mt-6" />
 
       <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
         <div className="space-y-1">
-          <Subheading>Organization Name</Subheading>
-          <Text>This will be displayed on your public profile.</Text>
+          <Subheading>公司名称</Subheading>
+          <Text>这里显示公开资料</Text>
         </div>
         <div>
           <Input aria-label="Organization Name" name="name" defaultValue="Catalyst" />
@@ -34,8 +34,8 @@ export default function Settings() {
 
       <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
         <div className="space-y-1">
-          <Subheading>Organization Bio</Subheading>
-          <Text>This will be displayed on your public profile. Maximum 240 characters.</Text>
+          <Subheading>公司介绍</Subheading>
+          <Text>这里显示公司介绍。最多240字.</Text>
         </div>
         <div>
           <Textarea aria-label="Organization Bio" name="bio" />
@@ -46,15 +46,15 @@ export default function Settings() {
 
       <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
         <div className="space-y-1">
-          <Subheading>Organization Email</Subheading>
-          <Text>This is how customers can contact you for support.</Text>
+          <Subheading>公司联系方式</Subheading>
+          <Text>这里显示公司联系方式.</Text>
         </div>
         <div className="space-y-4">
           <Input type="email" aria-label="Organization Email" name="email" defaultValue="info@example.com" />
-          <CheckboxField>
-            <Checkbox name="email_is_public" defaultChecked />
+          {/* <CheckboxField> */}
+            {/* <Checkbox name="email_is_public" defaultChecked />
             <Label>Show email on public profile</Label>
-          </CheckboxField>
+          </CheckboxField> */}
         </div>
       </section>
 
@@ -62,34 +62,21 @@ export default function Settings() {
 
       <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
         <div className="space-y-1">
-          <Subheading>Address</Subheading>
-          <Text>This is where your organization is registered.</Text>
+          <Subheading>地址</Subheading>
+          <Text>这是公司的注册地址</Text>
         </div>
         <Address />
       </section>
 
-      <Divider className="my-10" soft />
 
-      <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
-        <div className="space-y-1">
-          <Subheading>Currency</Subheading>
-          <Text>The currency that your organization will be collecting.</Text>
-        </div>
-        <div>
-          <Select aria-label="Currency" name="currency" defaultValue="cad">
-            <option value="cad">CAD - Canadian Dollar</option>
-            <option value="usd">USD - United States Dollar</option>
-          </Select>
-        </div>
-      </section>
 
       <Divider className="my-10" soft />
 
       <div className="flex justify-end gap-4">
         <Button type="reset" plain>
-          Reset
+          重制
         </Button>
-        <Button type="submit">Save changes</Button>
+        <Button type="submit">保存设置</Button>
       </div>
     </form>
   )
