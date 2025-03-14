@@ -61,7 +61,7 @@ export default async function Events() {
                       {event.date} at {event.time} <span aria-hidden="true">·</span> {event.location}
                     </div>
                     <div className="text-xs/6 text-zinc-600">
-                      {event.ticketsSold}/{event.ticketsAvailable} tickets sold
+                      {Math.floor(event.ticketsSold/12)}/{Math.floor(event.ticketsAvailable/12)} 位置
                     </div>
                   </div>
                 </div>
