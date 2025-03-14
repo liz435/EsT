@@ -23,9 +23,10 @@ export async function getOrders() {
         denied: "2",
         accepted: "4",
         idNumber: "1304198509276543",
-        major: "计算机科学",
+        major: "法律",
         age: 39,
-        organization: "多伦多大学"
+        organization: "多伦多大学",
+        status: "拒绝"
       },
       event: await getEvent('1000')
     },
@@ -40,9 +41,10 @@ export async function getOrders() {
         denied: "1",
         accepted: "3",
         idNumber: "3205197612087654",
-        major: "金融学",
+        major: "法律",
         age: 48,
-        organization: "摩根大通银行"
+        organization: "摩根大通银行",
+        status: "接受"
       },
       event: await getEvent('1001')
     },
@@ -59,7 +61,8 @@ export async function getOrders() {
         idNumber: "5107199003216789",
         major: "市场营销",
         age: 34,
-        organization: "温哥华营销协会"
+        organization: "温哥华营销协会",
+        status: "接受"
       },
       event: await getEvent('1002')
     },
@@ -74,9 +77,10 @@ export async function getOrders() {
         denied: "3",
         accepted: "1",
         idNumber: "6504198807231456",
-        major: "金融学",
+        major: "法律",
         age: 36,
-        organization: "蒙特利尔人力资源部"
+        organization: "蒙特利尔人力资源部",
+        status: "接受"
       },
       event: await getEvent('1000')
     },
@@ -93,7 +97,8 @@ export async function getOrders() {
         idNumber: "2103199504129876",
         major: "计算机科学",
         age: 29,
-        organization: "卡尔加里心理健康中心"
+        organization: "卡尔加里心理健康中心",
+        status: "接受"
       },
       event: await getEvent('1003')
     },
@@ -110,7 +115,8 @@ export async function getOrders() {
         idNumber: "4508197905234567",
         major: "计算机科学",
         age: 45,
-        organization: "迈阿密烹饪学院"
+        organization: "迈阿密烹饪学院",
+        status: "接受" 
       },
       event: await getEvent('1001')
     },
@@ -127,7 +133,8 @@ export async function getOrders() {
         idNumber: "7609198201098765",
         major: "金融学",
         age: 42,
-        organization: "渥太华新闻社"
+        organization: "渥太华新闻社",
+        status: "接受" 
       },
       event: await getEvent('1002')
     },
@@ -144,7 +151,8 @@ export async function getOrders() {
         idNumber: "8201197306127845",
         major: "法律",
         age: 51,
-        organization: "温尼伯大学物理系"
+        organization: "温尼伯大学物理系",
+        status: "接受" 
       },
       event: await getEvent('1000')
     },
@@ -161,7 +169,8 @@ export async function getOrders() {
         idNumber: "3606199208234532",
         major: "法律",
         age: 32,
-        organization: "魁北克体育协会"
+        organization: "魁北克体育协会",
+        status: "接受" 
       },
       event: await getEvent('1000')
     },
@@ -178,7 +187,8 @@ export async function getOrders() {
         idNumber: "9403198407125678",
         major: "工商管理",
         age: 40,
-        organization: "哈利法克斯音乐厅"
+        organization: "哈利法克斯音乐厅",
+        status: "接受" 
       },
       event: await getEvent('1003')
     },
@@ -195,7 +205,8 @@ export async function getOrders() {
         idNumber: "5702198906238765",
         major: "工商管理",
         age: 35,
-        organization: "全球企业顾问公司"
+        organization: "全球企业顾问公司",
+        status: "接受" 
       },
       event: await getEvent('1004')
     },
@@ -212,7 +223,8 @@ export async function getOrders() {
         idNumber: "6810199109124567",
         major: "法律",
         age: 33,
-        organization: "德克萨斯科技公司"
+        organization: "德克萨斯科技公司",
+        status: "接受" 
       },
       event: await getEvent('1001')
     },
@@ -229,7 +241,8 @@ export async function getOrders() {
         idNumber: "2909198504236789",
         major: "电子工程",
         age: 39,
-        organization: "旧金山电子科技有限公司"
+        organization: "旧金山电子科技有限公司",
+        status: "接受" 
       },
       event: await getEvent('1002')
     },
@@ -246,7 +259,8 @@ export async function getOrders() {
         idNumber: "4107199305129876",
         major: "金融学",
         age: 31,
-        organization: "波士顿医学研究中心"
+        organization: "波士顿医学研究中心",
+        status: "接受" 
       },
       event: await getEvent('1003')
     },
@@ -263,7 +277,8 @@ export async function getOrders() {
         idNumber: "7306199207236754",
         major: "法律",
         age: 32,
-        organization: "丹佛环保局"
+        organization: "丹佛环保局",
+        status: "接受" 
       },
       event: await getEvent('1004')
     },
@@ -280,7 +295,8 @@ export async function getOrders() {
         idNumber: "8504198603123456",
         major: "法律",
         age: 38,
-        organization: "达拉斯律师事务所"
+        organization: "达拉斯律师事务所",
+        status: "接受" 
       },
       event: await getEvent('1000')
     },
@@ -297,7 +313,8 @@ export async function getOrders() {
         idNumber: "1205199001234567",
         major: "工商管理",
         age: 34,
-        organization: "波特兰创意工作室"
+        organization: "波特兰创意工作室",
+        status: "接受" 
       },
       event: await getEvent('1001')
     },
@@ -314,7 +331,8 @@ export async function getOrders() {
         idNumber: "3404198705126789",
         major: "工商管理",
         age: 37,
-        organization: "芝加哥建筑设计院"
+        organization: "芝加哥建筑设计院",
+        status: "接受" 
       },
       event: await getEvent('1002')
     },
@@ -331,7 +349,8 @@ export async function getOrders() {
         idNumber: "9203199406127654",
         major: "工商管理",
         age: 30,
-        organization: "西雅图数据分析公司"
+        organization: "西雅图数据分析公司",
+        status: "接受" 
       },
       event: await getEvent('1003')
     },
@@ -348,7 +367,8 @@ export async function getOrders() {
         idNumber: "5708199102236543",
         major: "工商管理",
         age: 33,
-        organization: "洛杉矶电影工作室"
+        organization: "洛杉矶电影工作室",
+        status: "接受" 
       },
       event: await getEvent('1004')
     },
@@ -363,9 +383,10 @@ export async function getOrders() {
         denied: "3",
         accepted: "2",
         idNumber: "6409198807123456",
-        major: "工商管理",
+        major: "法律",
         age: 36,
-        organization: "迈阿密海滩度假村"
+        organization: "迈阿密海滩度假村",
+        status: "接受" 
       },
       event: await getEvent('1000')
     },
@@ -382,7 +403,8 @@ export async function getOrders() {
         idNumber: "7102199208236789",
         major: "石油工程",
         age: 32,
-        organization: "休斯顿能源公司"
+        organization: "休斯顿能源公司",
+        status: "接受" 
       },
       event: await getEvent('1002')
     },
@@ -399,7 +421,8 @@ export async function getOrders() {
         idNumber: "8309198605124567",
         major: "石油工程",
         age: 38,
-        organization: "新奥尔良爵士乐俱乐部"
+        organization: "新奥尔良爵士乐俱乐部",
+        status: "接受"
       },
       event: await getEvent('1003')
     },
@@ -416,7 +439,8 @@ export async function getOrders() {
         idNumber: "2407198304237654",
         major: "石油工程",
         age: 41,
-        organization: "丹佛地质研究所"
+        organization: "丹佛地质研究所",
+        status: "接受" 
       },
       event: await getEvent('1001')
     },
@@ -433,7 +457,8 @@ export async function getOrders() {
         idNumber: "4506199709124567",
         major: "石油工程",
         age: 27,
-        organization: "凤凰城气象局"
+        organization: "凤凰城气象局",
+        status: "接受" 
       },
       event: await getEvent('1004')
     },
@@ -450,7 +475,8 @@ export async function getOrders() {
         idNumber: "4506199709124567",
         major: "计算机科学",
         age: 29,
-        organization: "凤凰城气象局"
+        organization: "凤凰城气象局",
+        status: "接受" 
       },
       event: await getEvent('1004')
     },

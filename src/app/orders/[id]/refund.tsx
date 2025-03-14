@@ -29,7 +29,7 @@ export function RefundOrder({ amount, ...props }: { amount: string } & React.Com
               <Label>取消原因</Label>
               <Select name="reason" defaultValue="">
                 <option value="" disabled>
-                  Select a reason&hellip;
+                  选择取消原因&hellip;
                 </option>
                 <option value="duplicate">专家时间冲突</option>
                 <option value="fraudulent">评标机构取消</option>

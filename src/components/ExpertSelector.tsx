@@ -1,9 +1,11 @@
 "use client"
 import { useState } from "react";;
 import { Button } from "@/components/button";
+import { Link } from "./link";
 
 
 type Order = {
+  url:string
     id: string | number;  
     date: string;
     customer: {
@@ -118,7 +120,7 @@ export function ExpertSelector({ orders }: { orders: Order[] }) {
             </div>
   
             {/* Organization filter */}
-            <div>
+            {/* <div>
               <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">单位</label>
               <select
                 name="organization"
@@ -133,10 +135,10 @@ export function ExpertSelector({ orders }: { orders: Order[] }) {
                   </option>
                 ))}
               </select>
-            </div>
+            </div> */}
   
             {/* Age range */}
-            <div>
+            {/* <div>
               <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">最小年龄</label>
               <input
                 type="number"
@@ -146,9 +148,9 @@ export function ExpertSelector({ orders }: { orders: Order[] }) {
                 placeholder="最小年龄"
                 className="mt-1 block w-full rounded-md border border-zinc-300 bg-white px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900"
               />
-            </div>
+            </div> */}
   
-            <div>
+            {/* <div>
               <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300">最大年龄</label>
               <input
                 type="number"
@@ -158,7 +160,7 @@ export function ExpertSelector({ orders }: { orders: Order[] }) {
                 placeholder="最大年龄"
                 className="mt-1 block w-full rounded-md border border-zinc-300 bg-white px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 dark:border-zinc-700 dark:bg-zinc-900"
               />
-            </div>
+            </div> */}
           </div>
   
           <div className="mt-6 flex items-center gap-4">
@@ -206,13 +208,17 @@ export function ExpertSelector({ orders }: { orders: Order[] }) {
                 </thead>
                
                   {selectedExperts.map((order) => (
-                    <tr key={order.customer.idNumber}>
+ 
+                    <tr key={order.customer.idNumber} >
                       <td className="whitespace-nowrap px-6 py-4">{order.id}</td>
-                      <td className="whitespace-nowrap px-6 py-4 font-medium">{order.customer.name}</td>
+                      <Link href={order.url}>
+                      <td className="whitespace-nowrap px-6 py-4 font-medium hover:underline hover:text-lime-600">{order.customer.name}</td>
+                      </Link>
                       <td className="whitespace-nowrap px-6 py-4">{order.customer.major}</td>
                       <td className="whitespace-nowrap px-6 py-4">{order.customer.organization}</td>
                       <td className="whitespace-nowrap px-6 py-4">{order.customer.age}</td>
                     </tr>
+        
                   ))}
              
               </table>

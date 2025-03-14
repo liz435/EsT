@@ -73,7 +73,7 @@ export default async function Order({ params }: { params: { id: string } }) {
         <DescriptionList>
           <DescriptionTerm>            
           <Link href={order.event.url} className="flex items-center gap-2">
-              <span>{order.event.name}</span>
+              <span className='hover:underline hover:text-lime-400'>{order.event.name}</span>
           </Link>
           </DescriptionTerm>
           <DescriptionDetails><Badge color="lime">确认接受</Badge></DescriptionDetails>

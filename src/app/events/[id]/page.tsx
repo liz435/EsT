@@ -41,7 +41,7 @@ export default async function Event({ params }: { params: { id: string } }) {
           <div>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
               <Heading>{event.name}</Heading>
-              <Badge color={event.status === "On Sale" ? "lime" : "zinc"}>{event.status}</Badge>
+              <Badge color={event.status === "正在抽取" ? "lime" : "red"}>{event.status}</Badge>
             </div>
             <div className="mt-2 text-sm/6 text-zinc-500">
               {event.date} {event.time} <span aria-hidden="true">·</span> {event.location}
@@ -68,6 +68,7 @@ export default async function Event({ params }: { params: { id: string } }) {
             <TableHeader>日期</TableHeader>
             <TableHeader>专家姓名</TableHeader>
             <TableHeader>专业</TableHeader>
+            <TableHeader>状态</TableHeader>
           </TableRow>
         </TableHead>
         {event.status == "正在抽取" ? (
@@ -80,6 +81,9 @@ export default async function Event({ params }: { params: { id: string } }) {
             <TableCell className="text-zinc-500">{eventorder.date}</TableCell>
             <TableCell>{eventorder.customer.name}</TableCell>
             <TableCell>{eventorder.customer.major}</TableCell>
+            <TableCell><Badge className="max-sm:hidden" color={eventorder.customer.status === '接受' ? 'lime' : 'zinc'}>
+                    {eventorder.customer.status}
+                  </Badge></TableCell>
           </TableRow>
         ))}
       </TableBody>

@@ -16,7 +16,7 @@ export default async function Home() {
     <>
       <Heading>早上好，Erica</Heading>
       <div className="mt-8 flex items-end justify-between">
-        <Subheading>Overview</Subheading>
+        <Subheading>数据总览</Subheading>
         <div>
           <Select name="period">
             <option value="last_week">过去一周</option>
