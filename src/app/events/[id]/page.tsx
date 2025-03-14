@@ -1,5 +1,4 @@
 
-import { Stat } from "@/app/page"
 import { Badge } from "@/components/badge"
 import { Button } from "@/components/button"
 import { Heading, Subheading } from "@/components/heading"
