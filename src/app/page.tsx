@@ -5,34 +5,9 @@ import { Heading, Subheading } from '@/components/heading'
 import { Select } from '@/components/select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/table'
 import { getRecentOrders } from '@/data'
+import {Stat, StatB} from '@/components/Stat'
 
-export function Stat({ title, value, change }: { title: string; value: string; change: string }) {
-  return (
-    <div>
-      <Divider />
-      <div className="mt-6 text-lg/6 font-medium sm:text-sm/6">{title}</div>
-      <div className="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">{value}</div>
-      <div className="mt-3 text-sm/6 sm:text-xs/6">
-        <Badge color={change.startsWith('+') ? 'lime' : 'pink'}>{change}</Badge>{' '}
-        <span className="text-zinc-500">相较于上周</span>
-      </div>
-    </div>
-  )
-}
 
-export function StatB({ title, value, change }: { title: string; value: string; change: string }) {
-  return (
-    <div>
-      <Divider />
-      <div className="mt-6 text-lg/6 font-medium sm:text-sm/6">{title}</div>
-      <div className="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">{value}</div>
-      <div className="mt-3 text-sm/6 sm:text-xs/6">
-        <Badge color={change.startsWith('-') ? 'lime' : 'pink'}>{change}</Badge>{' '}
-        <span className="text-zinc-500">相较于上周</span>
-      </div>
-    </div>
-  )
-}
 
 export default async function Home() {
   let orders = await getRecentOrders()
